@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "./Card";
 
-const NewArrivalSection = ({ items }) => {
+const NewArrivalSection = ({ items, onClickCard }) => {
   return (
     <div className=" mt-20">
       <div className=" flex justify-center">
@@ -11,7 +11,7 @@ const NewArrivalSection = ({ items }) => {
       </div>
       <div className=" justify-between mt-10 grid grid-cols-1 gap-y-24 md:grid-cols-2  gap-x-6 xl:grid-cols-[repeat(3,25%)] ">
         {items.map((item) => (
-          <Card key={item.id} item={item} />
+          <Card key={item.id} item={item} onClick={onClickCard} />
         ))}
       </div>
     </div>
