@@ -42,7 +42,7 @@ const Nav = () => {
       </div>
       {/* Cart button  */}
       <div className="fixed left-4 bottom-4 lg:static lg:mr-8">
-        <div className=" flex justify-center items-center h-12 w-12 rounded-full bg-white shadow-md cursor-pointer ">
+        <div className=" transition active:scale-75 flex justify-center items-center h-12 w-12 rounded-full bg-white shadow-md cursor-pointer ">
           <TbShoppingBag />
         </div>
       </div>
